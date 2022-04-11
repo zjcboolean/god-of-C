@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_04_10_morning_array2", "test_04_10_morning_array2\test_04_10_morning_array2.vcxproj", "{29744426-6777-4649-96C4-2AF73F48256C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29744426-6777-4649-96C4-2AF73F48256C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{29744426-6777-4649-96C4-2AF73F48256C}.Debug|Win32.Build.0 = Debug|Win32
+		{29744426-6777-4649-96C4-2AF73F48256C}.Release|Win32.ActiveCfg = Release|Win32
+		{29744426-6777-4649-96C4-2AF73F48256C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
