@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_04_13_afternoon_operator", "test_04_13_afternoon_operator\test_04_13_afternoon_operator.vcxproj", "{FA76037F-7B7C-4699-B6F2-1F36A56750E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA76037F-7B7C-4699-B6F2-1F36A56750E5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FA76037F-7B7C-4699-B6F2-1F36A56750E5}.Debug|Win32.Build.0 = Debug|Win32
+		{FA76037F-7B7C-4699-B6F2-1F36A56750E5}.Release|Win32.ActiveCfg = Release|Win32
+		{FA76037F-7B7C-4699-B6F2-1F36A56750E5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
