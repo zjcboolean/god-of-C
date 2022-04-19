@@ -1,0 +1,102 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+
+//描述一个学生，一些数据
+//名字
+//年龄
+//电话
+//性别
+
+//struct结构体关键字  Stu 结构体标签  struct Stu  结构体类型
+//struct Stu
+//{
+//	//成员变量
+//	char name[20];
+//	short age;
+//	char tele[12];
+//	char sex[5];
+//  
+//}s1,s2,s3;//s1,s2,s3是全局变量，不建议使用
+
+//typedef struct Stu
+//{
+//	//成员变量
+//	char name[20];
+//	short age;
+//	char tele[12];
+//	char sex[5];
+//  
+//}Stu;//使用typedef给结构体类型重命名
+//int main()
+//{
+//	Stu s1 = {"张三",20,"12345","男"};//局部变量，初始化
+//	Stu s2 = {"旺财",30,"23456","女"};
+//    return 0;
+//}
+
+//结构体嵌套结构
+
+//struct S
+//{
+//   int a;
+//   char c;
+//   char arr[20];
+//   double d;
+//};
+//
+//struct T
+//{
+//   char ch[10];
+//   struct S s;
+//   char *pc;
+//};
+//
+//int main()
+//{
+//	char arr[] = "hello bit\n";
+//	struct T t = {"hehe",{100,'w',"hello world",3.14},arr};
+//	printf("%s\n",t.ch);//hehe
+//	printf("%s\n",t.s.arr);//hello world
+//	printf("%lf\n",t.s.d);//3.14
+//	printf("%s\n",t.pc);//hello bit
+//    return 0;
+//}
+
+
+typedef struct Stu
+{
+	//成员变量
+	char name[20];
+	short age;
+	char tele[12];
+	char sex[5];
+  
+}Stu;//使用typedef给结构体类型重命名
+
+void Print1(Stu tmp)
+{
+     printf("name:%s\n",tmp.name);
+	 printf("age: %d\n",tmp.age);
+	 printf("tele:%s\n",tmp.tele);
+	 printf("sex :%s\n",tmp.sex);
+}
+
+void Print2(Stu* ps)
+{
+		printf("name:%s\n",ps->name);
+		printf("age :%d\n",ps->age);
+		printf("tele:%s\n",ps->tele);
+	    printf("sex :%s\n",ps->sex);
+}
+
+int main()
+{
+	Stu s = {"李四",40,"1234","男"};
+	//打印结构体数据
+	//Print1哪 Print2哪个更好？ 
+	Print1(s);
+	Print2(&s);//Print2更好，只传递一个指针，不需要拷贝实参，节省空间，节省上传时间
+
+    return 0;
+}
